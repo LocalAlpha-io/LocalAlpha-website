@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LocalAlpha
 
-## Getting Started
+**The Privacy-First Frontend for QuantConnect LEAN**
 
-First, run the development server:
+[![Release](https://img.shields.io/github/v/release/LocalAlpha-io/localalpha-releases)](https://github.com/LocalAlpha-io/localalpha-releases/releases)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+LocalAlpha is a local desktop dashboard that allows you to visualize backtests, debug logs, and analyze trade performance without cloud uploads. Engineered for performance and privacy, it serves as the visualization layer for your local LEAN CLI workflows.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Overview
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+LocalAlpha is designed to fit seamlessly into your existing local development loop. It reads standard JSON output files from the LEAN engine and provides institutional-grade analytics on your desktop.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**100% Local & Private** Your strategy code and results never leave your machine. LocalAlpha runs entirely offline, making it safe for proprietary institutional algorithms. No telemetry, no "cloud sync", no leaks.
 
-## Learn More
+## ✨ Features
 
-To learn more about Next.js, take a look at the following resources:
+- **Interactive Charts**: High-performance, zoomable canvas charts for equity curves, drawdowns, and benchmark comparisons.
+- **Advanced Metrics**: Instant local recalculation of Sharpe, Sortino, Calmar, and PSR ratios.
+- **Trade X-Ray**: Drill down into every execution. Use MAE (Maximum Adverse Excursion) and MFE scatter plots to optimize stop-losses and take-profit levels with surgical precision.
+- **Log Explorer**: Virtualized, regex-powered search capable of handling gigabyte-sized log files with zero lag.
+- **Reality Check**: Reconcile your backtests with live trading results. Detect slippage, latency, and execution errors by matching trades across result files.
+- **Optimization Heatmaps**: Visualize parameter stability to avoid overfitting.
+- **Portfolio Intelligence**: Analyze correlations, sector exposure, and rolling beta across multiple strategies.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠 How It Works
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1.  **Run Backtest**: Execute your strategy locally using the LEAN CLI as usual.
+2.  **Auto-Ingest**: LocalAlpha watches your output folder. As soon as `result.json` appears, the dashboard updates instantly.
+3.  **Deep Dive**: Analyze metrics, inspect trades, and debug logs without leaving your desktop.
 
-## Deploy on Vercel
+## 📥 Download
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Download the latest version for your operating system from the [Releases Page](../../releases).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Platform | Support |
+| :--- | :--- |
+| **macOS** | Universal Binary (Apple Silicon & Intel) |
+| **Windows** | Windows 10/11 Installer (.msi) |
+| **Linux** | AppImage / Deb (Ubuntu/Debian based) |
+
+## 🧩 Compatibility
+
+- **LEAN CLI**: Fully compatible with standard JSON output.
+- **Live Trading**: Supports real-time monitoring by tailing live deployment result files.
+
+## 📄 License
+
+LocalAlpha is a commercial product with a free trial and a Professional License for advanced features. See [localalpha.io](https://localalpha.io/) for pricing details.
+
+---
+*LocalAlpha is not affiliated with QuantConnect Corporation.*
