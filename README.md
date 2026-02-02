@@ -23,7 +23,7 @@ This repository contains the source code for the public-facing website, built wi
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/LocalAlpha-io/LocalAlpha-website.git](https://github.com/LocalAlpha-io/LocalAlpha-website.git)
+   git clone https://github.com/LocalAlpha-io/LocalAlpha-website.git
    cd LocalAlpha-website
 2. **Install dependencies:**
    ```bash
@@ -44,7 +44,9 @@ Open http://localhost:3000 with your browser to see the result.
       └── tailwind.config.ts    # Tailwind CSS configuration (if applicable)
 ```
 🚢 Deployment
+
 The website is hosted on Vercel. Pushing to the main branch automatically triggers a deployment.
 
 📄 License
+
 This project is licensed under the Apache-2.0 License - see the LICENSE file for details.
