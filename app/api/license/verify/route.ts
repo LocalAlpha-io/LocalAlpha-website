@@ -1,18 +1,41 @@
 import { NextRequest, NextResponse } from 'next/server';
 
+export async function OPTIONS() {
+  return new NextResponse(null, {
+    status: 200,
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'POST, OPTIONS',
+      'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+    },
+  });
+}
+
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
     const { license_key } = body;
 
+    const corsHeaders = {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'POST, OPTIONS',
+      'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+    };
+
     if (!license_key) {
-      return NextResponse.json({ valid: false, error: 'License key is required' }, { status: 400 });
+      return NextResponse.json(
+        { valid: false, error: 'License key is required' }, 
+        { status: 400, headers: corsHeaders }
+      );
     }
 
     const apiKey = process.env.WHOP_API_KEY;
     if (!apiKey) {
       console.error('WHOP_API_KEY is not configured');
-      return NextResponse.json({ valid: false, error: 'Server configuration error' }, { status: 500 });
+      return NextResponse.json(
+        { valid: false, error: 'Server configuration error' }, 
+        { status: 500, headers: corsHeaders }
+      );
     }
 
     // Whop API: Validate License
@@ -30,9 +53,15 @@ export async function POST(req: NextRequest) {
       console.error('Whop API Error:', response.status, errorText);
       
       if (response.status === 404) {
-         return NextResponse.json({ valid: false, error: 'Invalid license key' });
+         return NextResponse.json(
+           { valid: false, error: 'Invalid license key' },
+           { headers: corsHeaders }
+         );
       }
-      return NextResponse.json({ valid: false, error: 'Validation failed' });
+      return NextResponse.json(
+        { valid: false, error: 'Validation failed' },
+        { headers: corsHeaders }
+      );
     }
 
     const data = await response.json();
@@ -53,17 +82,24 @@ export async function POST(req: NextRequest) {
             customer_name: data.discord?.username || data.email?.split('@')[0] || 'Trader',
             product_name: 'LocalAlpha Pro'
         }
-      });
+      }, { headers: corsHeaders });
     } else {
         return NextResponse.json({ 
             valid: false, 
             error: 'License is inactive or expired',
             status: data.status 
-        });
+        }, { headers: corsHeaders });
     }
 
   } catch (error: any) {
     console.error('License verification error:', error);
-    return NextResponse.json({ valid: false, error: error.message }, { status: 500 });
+    return NextResponse.json(
+      { valid: false, error: error.message }, 
+      { status: 500, headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'POST, OPTIONS',
+        'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+      }}
+    );
   }
 }
