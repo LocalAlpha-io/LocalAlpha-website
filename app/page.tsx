@@ -417,6 +417,8 @@ export default function Home() {
             <a href="/docs" className="text-sm text-[var(--muted)] hover:text-white transition-colors">Documentation</a>
             <a href="/changelog" className="text-sm text-[var(--muted)] hover:text-white transition-colors">Changelog</a>
             <a href="/privacy" className="text-sm text-[var(--muted)] hover:text-white transition-colors">Privacy Policy</a>
+            <a href="/terms" className="text-sm text-[var(--muted)] hover:text-white transition-colors">Terms & Conditions</a>
+            <a href="/refund-policy" className="text-sm text-[var(--muted)] hover:text-white transition-colors">Refund Policy</a>
             <a href="/contact" className="text-sm text-[var(--muted)] hover:text-white transition-colors">Contact</a>
           </div>
         </div>
