@@ -29,7 +29,7 @@ export default function Navbar() {
 
           <div className="hidden md:flex items-center gap-4">
             <a
-              href="https://localalpha.lemonsqueezy.com/"
+              href="https://whop.com/localalpha-systems-llc/localalpha-pro/"
               target="_blank"
               rel="noopener noreferrer"
               className="ide-btn-primary text-sm shadow-[0_0_15px_-3px_var(--primary)] hover:shadow-[0_0_20px_-3px_var(--primary)] transition-shadow duration-300"
@@ -58,7 +58,7 @@ export default function Navbar() {
             <Link href="/docs" onClick={() => setIsOpen(false)} className="text-sm font-medium text-[var(--muted)] hover:text-white py-2 block border-b border-[var(--border)]/50">Docs</Link>
             <Link href="/contact" onClick={() => setIsOpen(false)} className="text-sm font-medium text-[var(--muted)] hover:text-white py-2 block">Contact</Link>
             <a
-              href="https://localalpha.lemonsqueezy.com"
+              href="https://whop.com/localalpha-systems-llc/localalpha-pro/"
               target="_blank"
               rel="noopener noreferrer"
               className="ide-btn-primary text-sm text-center py-3 mt-2"

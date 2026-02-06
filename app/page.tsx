@@ -57,7 +57,7 @@ export default function Home() {
             <div className="flex flex-col items-center gap-6 mb-20">
               <div className="flex flex-col sm:flex-row justify-center gap-4 w-full items-center">
                 <a
-                  href="https://localalpha.lemonsqueezy.com/"
+                  href="https://whop.com/localalpha-systems-llc/localalpha-pro/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="ide-btn-primary flex items-center justify-center gap-2 text-base px-8 py-3.5 shadow-lg shadow-[rgba(46,160,67,0.2)] hover:scale-105 transition-transform w-full sm:w-auto h-[50px]"
@@ -333,7 +333,7 @@ export default function Home() {
                 </ul>
 
                 <a
-                  href="https://localalpha.lemonsqueezy.com/"
+                  href="https://whop.com/localalpha-systems-llc/localalpha-pro/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="ide-btn-primary block w-full text-center py-4 text-lg"
@@ -390,7 +390,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <a
-                href="https://localalpha.lemonsqueezy.com/"
+                href="https://whop.com/localalpha-systems-llc/localalpha-pro/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="ide-btn-primary text-lg px-8 py-4 shadow-xl shadow-[rgba(46,160,67,0.3)] hover:scale-105 transition-transform"
