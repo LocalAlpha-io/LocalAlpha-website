@@ -24,7 +24,7 @@ export default function PrivacyPage() {
           <ul className="list-disc pl-6 space-y-2">
             <li><strong>License Verification:</strong> When you activate the software, we verify your license key against our server to ensure validity.</li>
             <li><strong>Website Analytics:</strong> We use privacy-friendly analytics (e.g., Vercel Analytics) on our marketing website to understand visitor trends. These do not track individual user behavior across the web.</li>
-            <li><strong>Payment Information:</strong> Payments are processed by our Merchant of Record, Paddle (or Lemon Squeezy). We do not store your credit card details.</li>
+            <li><strong>Payment Information:</strong> Payments are processed by our Merchant of Record, Polar.sh. We do not store your credit card details.</li>
           </ul>
 
           <h2 className="text-xl font-bold text-white mt-8 mb-4">4. Third-Party Services</h2>
@@ -32,7 +32,7 @@ export default function PrivacyPage() {
             We use trusted third-party services for specific functions:
           </p>
           <ul className="list-disc pl-6 space-y-2">
-            <li><strong>Paddle / Lemon Squeezy:</strong> For payment processing and order fulfillment.</li>
+            <li><strong>Polar.sh:</strong> For payment processing and order fulfillment.</li>
             <li><strong>Vercel:</strong> For website hosting and analytics.</li>
           </ul>
 
