@@ -18,6 +18,10 @@ export const metadata: Metadata = {
   title: "LocalAlpha - The Local Backtest Intelligence Dashboard",
   description: "Visualize backtests, debug logs, and analyze trade performance locally. The privacy-first frontend for LEAN. No cloud uploads.",
   keywords: ["QuantConnect", "LEAN Engine", "Backtesting", "Algorithmic Trading", "Python", "Local Analytics"],
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
   openGraph: {
     title: "LocalAlpha",
     description: "The privacy-first frontend for your local algorithmic trading backtests.",
