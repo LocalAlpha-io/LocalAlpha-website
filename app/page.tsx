@@ -299,7 +299,7 @@ export default function Home() {
         <section id="pricing" className="py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl font-bold text-white mb-4">Simple Annual Pricing</h2>
+              <h2 className="text-3xl font-bold text-white mb-4">Simple Monthly Pricing</h2>
               <p className="text-[var(--muted)]">Professional analytics for the price of a single trade.</p>
             </div>
 
@@ -310,8 +310,8 @@ export default function Home() {
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-2">Professional License</h3>
                 <div className="flex items-baseline mb-6">
-                  <span className="text-5xl font-extrabold text-white">$149</span>
-                  <span className="text-[var(--muted)] ml-2">/ year</span>
+                  <span className="text-5xl font-extrabold text-white">$15</span>
+                  <span className="text-[var(--muted)] ml-2">/ month</span>
                 </div>
                 <p className="text-[var(--muted)] mb-8 pb-8 border-b border-[var(--border)]">
                   The complete toolkit for the serious algorithmic trader.
