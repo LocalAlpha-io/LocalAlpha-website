@@ -47,7 +47,8 @@ export default function Home() {
 
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-8">
               The Privacy-First <br className="hidden sm:block" />
-              Frontend for <span className="text-[var(--primary)]">LEAN</span>
+              Frontend for the <span className="text-[var(--primary)]">LEAN</span> <br className="hidden sm:block" />
+              Algorithmic Trading Engine
             </h1>
             <p className="max-w-2xl mx-auto text-lg sm:text-xl text-[var(--muted)] mb-12 leading-relaxed">
               Visualize backtests and monitor live trading in real-time.
