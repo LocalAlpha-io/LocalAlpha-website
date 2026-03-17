@@ -50,7 +50,7 @@ export default function Home() {
               Frontend for <span className="text-[var(--primary)]">LEAN</span>
             </h1>
             <p className="max-w-2xl mx-auto text-lg sm:text-xl text-[var(--muted)] mb-12 leading-relaxed">
-              Visualize backtests, debug logs, and analyze trade performance locally.
+              Visualize backtests and monitor live trading in real-time.
               <span className="text-white font-medium"> No cloud uploads. No telemetry.</span>
             </p>
 
@@ -108,13 +108,13 @@ export default function Home() {
               {[
                 {
                   icon: Terminal,
-                  title: "1. Run Backtest",
-                  desc: "Execute your strategy locally using the LEAN CLI. Output generates a standard JSON result."
+                  title: "1. Run Strategy",
+                  desc: "Execute backtests or live deployments using the LEAN engine locally."
                 },
                 {
                   icon: FileJson,
-                  title: "2. Auto-Ingest",
-                  desc: "LocalAlpha watches your output folder. As soon as the file appears, the dashboard updates."
+                  title: "2. Real-Time Tailing",
+                  desc: "LocalAlpha watches your output folder. As soon as a trade happens, the dashboard updates."
                 },
                 {
                   icon: Search,
@@ -163,9 +163,9 @@ export default function Home() {
               {/* Feature 2: Ingestion */}
               <div className="p-8 rounded-xl bg-[#161b22]/30 border border-[var(--border)] hover:border-[var(--secondary)] transition-all duration-300 group">
                 <Zap className="h-8 w-8 text-[var(--secondary)] mb-4 group-hover:scale-110 transition-transform" />
-                <h3 className="text-xl font-bold text-white mb-2">Instant Ingestion</h3>
+                <h3 className="text-xl font-bold text-white mb-2">Live Monitoring</h3>
                 <p className="text-[var(--muted)] text-sm">
-                  Drag & drop `result.json` or use Auto-Watch to sync instantly.
+                  Tail live `result.json` files to watch your algorithms perform in real-time.
                 </p>
               </div>
 
