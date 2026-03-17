@@ -63,7 +63,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="ide-btn-primary flex items-center justify-center gap-2 text-base px-8 py-3.5 shadow-lg shadow-[rgba(46,160,67,0.2)] hover:scale-105 transition-transform w-full sm:w-auto h-[50px]"
                 >
-                  Get Started Today <ArrowRight className="h-4 w-4" />
+                  Start 7-Day Free Trial <ArrowRight className="h-4 w-4" />
                 </a>
                 <a
                   href="https://github.com/LocalAlpha-io/localalpha-releases/releases"
@@ -74,6 +74,9 @@ export default function Home() {
                   <Download className="h-4 w-4" /> Download v1.0.0
                 </a>
               </div>
+              <p className="text-xs text-[var(--muted)] opacity-60">
+                Non-committal 7-day free trial • Cancel anytime
+              </p>
               <p className="text-xs text-[var(--muted)] opacity-60">
                 macOS, Windows & Linux • Hosted on GitHub
               </p>
@@ -314,6 +317,9 @@ export default function Home() {
                   <span className="text-5xl font-extrabold text-white">$15</span>
                   <span className="text-[var(--muted)] ml-2">/ month</span>
                 </div>
+                <div className="inline-block px-3 py-1 rounded-full bg-[var(--primary)]/10 text-[var(--primary)] text-xs font-bold mb-6">
+                  7-DAY FREE TRIAL INCLUDED
+                </div>
                 <p className="text-[var(--muted)] mb-8 pb-8 border-b border-[var(--border)]">
                   The complete toolkit for the serious algorithmic trader.
                 </p>
@@ -339,7 +345,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="ide-btn-primary block w-full text-center py-4 text-lg"
                 >
-                  Buy Now
+                  Start Free Trial
                 </a>
                 <p className="text-center text-xs text-[var(--muted)] mt-4">
                   Secure payment processed by Lemon Squeezy.
@@ -358,6 +364,7 @@ export default function Home() {
 
             <div className="space-y-4">
               {[
+                { q: "Is there a free trial?", a: "Yes. Every Professional License starts with a 7-day free trial. You won't be charged until the trial period ends, and you can cancel anytime from your dashboard." },
                 { q: "Is my strategy code or data ever sent to a server?", a: "No. LocalAlpha is a strictly local desktop application. It reads files from your hard drive and processes them in memory. No backtest data or strategy code is ever transmitted." },
                 { q: "Does this replace the LEAN CLI?", a: "No, it complements it. You continue to run backtests with LEAN CLI as usual. LocalAlpha acts as the visualization layer for the output files." },
                 { q: "What OS platforms are supported?", a: "We support macOS (Apple Silicon & Intel), Windows 10/11, and Linux (Ubuntu/Debian based)." },
@@ -396,7 +403,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="ide-btn-primary text-lg px-8 py-4 shadow-xl shadow-[rgba(46,160,67,0.3)] hover:scale-105 transition-transform"
               >
-                Get Started Today
+                Start Your Free Trial
               </a>
             </div>
           </div>

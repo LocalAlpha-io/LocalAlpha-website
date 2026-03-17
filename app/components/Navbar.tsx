@@ -34,7 +34,7 @@ export default function Navbar() {
               rel="noopener noreferrer"
               className="ide-btn-primary text-sm shadow-[0_0_15px_-3px_var(--primary)] hover:shadow-[0_0_20px_-3px_var(--primary)] transition-shadow duration-300"
             >
-              Buy License
+              Start Free Trial
             </a>
           </div>
 
@@ -63,7 +63,7 @@ export default function Navbar() {
               rel="noopener noreferrer"
               className="ide-btn-primary text-sm text-center py-3 mt-2"
             >
-              Buy License
+              Start Free Trial
             </a>
           </div>
         </div>
