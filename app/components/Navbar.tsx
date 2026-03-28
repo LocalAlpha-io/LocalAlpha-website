@@ -24,6 +24,7 @@ export default function Navbar() {
             <Link href="/#pricing" className="text-sm font-medium text-[var(--muted)] hover:text-white transition-colors">Pricing</Link>
             <Link href="/#faq" className="text-sm font-medium text-[var(--muted)] hover:text-white transition-colors">FAQ</Link>
             <Link href="/docs" className="text-sm font-medium text-[var(--muted)] hover:text-white transition-colors">Docs</Link>
+            <Link href="/strategy-lab" className="text-sm font-medium text-[#a371f7] hover:text-[#b486f8] transition-colors flex items-center gap-1">AI Strategy Lab <span className="text-[9px] bg-[#a371f7]/20 text-[#a371f7] px-1.5 py-0.5 rounded-full font-bold uppercase">New</span></Link>
             <Link href="/contact" className="text-sm font-medium text-[var(--muted)] hover:text-white transition-colors">Contact</Link>
           </div>
 
@@ -56,6 +57,7 @@ export default function Navbar() {
             <Link href="/#pricing" onClick={() => setIsOpen(false)} className="text-sm font-medium text-[var(--muted)] hover:text-white py-2 block border-b border-[var(--border)]/50">Pricing</Link>
             <Link href="/#faq" onClick={() => setIsOpen(false)} className="text-sm font-medium text-[var(--muted)] hover:text-white py-2 block border-b border-[var(--border)]/50">FAQ</Link>
             <Link href="/docs" onClick={() => setIsOpen(false)} className="text-sm font-medium text-[var(--muted)] hover:text-white py-2 block border-b border-[var(--border)]/50">Docs</Link>
+            <Link href="/strategy-lab" onClick={() => setIsOpen(false)} className="text-sm font-medium text-[#a371f7] hover:text-[#b486f8] py-2 block border-b border-[var(--border)]/50 flex items-center gap-2">AI Strategy Lab <span className="text-[9px] bg-[#a371f7]/20 text-[#a371f7] px-1.5 py-0.5 rounded-full font-bold uppercase">New</span></Link>
             <Link href="/contact" onClick={() => setIsOpen(false)} className="text-sm font-medium text-[var(--muted)] hover:text-white py-2 block">Contact</Link>
             <a
               href="https://buy.polar.sh/polar_cl_274zb8VIcW32bmITbpoihczWiT35QCgIlzbDl3yFzVE"
